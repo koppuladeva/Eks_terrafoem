@@ -27,3 +27,7 @@ module "bastion-host" {
   source = "./modules/bastion_host"
   instance_type = "t3.micro"
 }
+module "eks-cluster" {
+ source = "./modules/eks_sample"
+  
+}
